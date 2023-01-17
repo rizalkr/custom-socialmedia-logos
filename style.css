@@ -1,0 +1,76 @@
+*,body,html{margin: 0; padding: 0;}
+
+body{
+    font-family: 'Silkscreen', cursive;
+    background-color: aqua;
+}
+
+:root{
+    --bg-primary:rgb(252, 6, 178);
+    --bg-secondary: rgba(0, 0, 0, 0.797);
+    --txt-primary:rgb(240, 248, 255);
+    --txt-secondary: rgba(0, 0, 0, 0.797);
+    --icons-primary: yellow;
+    --button-primary: tomato;
+}
+
+.container{
+    width: 50%;
+    height: 50vh;
+    min-height: 100vh;
+    margin-left: 23%;
+    background-color: var(--bg-primary);
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-primary);
+}
+.card{
+    border: 2px solid gray;
+    background-color: var(--bg-secondary);
+    padding: 10px;
+    margin: .5px;
+    text-decoration: none;
+}
+.text-center{
+     text-align: center;
+ }
+
+ .icons{
+     color: var(--icons-primary);
+     font-size: 30px;
+    margin-bottom: 8px;
+ }
+
+ .btn{
+    margin-top: 1em;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-decoration: none;
+ }
+
+ .btn:hover{
+    background-color: var(--button-primary);
+ }
+
+@media screen and (min-width: 500px){
+    .container{
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (max-width: 476px){
+    .card{
+        width: 96%;
+    }
+    .wrapper{
+        background-color: aqua;
+
+    }
+}
